@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Component/NavBar";
 import Footer from "./Component/Footer/Footer";
 import LandingPage from "./Pages/LandingPage/LandingPage";
-import 'aos/dist/aos.css';  // Import AOS styles
+import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from "react";
 

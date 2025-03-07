@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.webp";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -12,9 +13,11 @@ function Navbar() {
     setIsClicked((prev) => !prev);
   };
 
-  const navigate = (path) => {
-    window.location.assign(`https://theavatarx.com/${path}`);
-  };
+  const naigate = useNavigate()
+
+  // const navigate = (path) => {
+  //   window.location.assign(`https://theavatarx.com/${path}`);
+  // };
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -34,7 +37,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`navbar ${scrolled ? "scrolled" : ""} ${
+        className={`navbar ${!scrolled ? "scrolled" : ""} ${
           blurred ? "blurred" : ""
         } ${isClicked ? "toggle-active" : ""}`}
       >
@@ -53,7 +56,7 @@ function Navbar() {
         </div>
         <ul className={isClicked ? "nav-links toggle-active" : "nav-links"}>
           <li>
-            <a href="https://theavatarx.com/#what-we-do">WHAT WE DO</a>
+            <a href="/#what-we-do">WHAT WE DO</a>
           </li>
           <li>
             <a href="/#technology">OUR AI TECHNOLOGY</a>

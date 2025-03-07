@@ -9,8 +9,8 @@ const LandingPage = () => {
     <div>
       <Hero />
       <WhatWeDo />
-      <CostSaving />
       <PatientJourney />
+      <CostSaving />
     </div>
   );
 };

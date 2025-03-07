@@ -1,4 +1,5 @@
 import React from "react";
+import "aos/dist/aos.css";
 import "./WhatWeDo.css";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +38,7 @@ function WhatWeDo() {
   const navigate = useNavigate();
 
   return (
-    <section className="what-we-do" id="what-we-do">
+    <section className="what-we-do overflow-x-hidden" id="what-we-do">
       <div className="inner-we-do">
         <div className="header">
           <h2 className="test-cls2" data-aos="fade-up">
@@ -77,10 +78,10 @@ function WhatWeDo() {
                     href={service.link}
                   >
                     <div className="p-[16px] pl-[16px] pr-[10px] fg-secondary-500">
-                      <h4 className="text-[16px] lg:text-[21px] text-left lh-1.2 -ls-0.4 max-w-[200px]">
+                      <h4 className="text-[16px] lg:text-[21px] text-left lh-1.2 -ls-0.4 max-w-[200px] text-black">
                         {service.title}
                       </h4>
-                      <p className="text-[14px] lg:text-[16px] text-left mt-[10px] lh-1.25 -ls-0.8 fw-400">
+                      <p className="text-[14px] lg:text-[16px] text-left mt-[10px] lh-1.25 -ls-0.8 fw-400 text-black">
                         {service.backfacecontent}
                       </p>
                     </div>

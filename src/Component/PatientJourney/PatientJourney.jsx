@@ -27,7 +27,6 @@ function PatientJourney() {
             src="/images/eco-system.webp"
             alt="Heart"
             className="heart-image"
-            style={{width: '1000px', height: '600px'}}
           />
         </div>
       </div>
