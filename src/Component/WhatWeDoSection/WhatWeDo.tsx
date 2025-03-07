@@ -78,10 +78,10 @@ function WhatWeDo() {
                     href={service.link}
                   >
                     <div className="p-[16px] pl-[16px] pr-[10px] fg-secondary-500">
-                      <h4 className="text-[16px] lg:text-[21px] text-left lh-1.2 -ls-0.4 max-w-[200px] text-black">
+                      <h4 className="text-[16px] lg:text-[21px] text-left lh-1.2 -ls-0.4 max-w-[200px] text-black font-normal">
                         {service.title}
                       </h4>
-                      <p className="text-[14px] lg:text-[16px] text-left mt-[10px] lh-1.25 -ls-0.8 fw-400 text-black">
+                      <p className="text-[14px] lg:text-[16px] text-left mt-[10px] lh-1.25 -ls-0.8 fw-400 text-black font-normal">
                         {service.backfacecontent}
                       </p>
                     </div>
